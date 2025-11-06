@@ -61,6 +61,9 @@ For example:
 :input: lxc config set core.https_address 10.68.216.12
 ```
 
+You will have to do this on all cluster members.
+You can access each node and apply the change, or you can use `--target <member-name>`, to orchestrate the action from any cluster node.
+
 All remote clients can then connect to LXD and access any image that is marked for public use.
 
 (server-authenticate)=
